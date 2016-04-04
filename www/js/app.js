@@ -143,6 +143,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     templateUrl: 'templates/setting.html'
                 }
             }
+        })
+        .state('register', {
+            url: '/register',
+        
+                    templateUrl: 'templates/register.html',
+                    controller:'AppCtrl'
+                
+            
         });
 
     // if none of the above states are matched, use this as the fallback

@@ -6,4 +6,10 @@ angular.module('starter.controllers', [])
     $scope.login = function() {
         $location.path('/app/dashboard');
     }
+    $scope.register = function(){
+    	$location.path('/register');	
+    }
+        $scope.gotologin = function(){
+    	$location.path('/app/login');	
+    }
 })
