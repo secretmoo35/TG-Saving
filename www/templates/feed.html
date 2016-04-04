@@ -1,5 +1,20 @@
-<ion-view view-title="Title">
-  <ion-content>
-    Content Here
-  </ion-content>
+<ion-view view-title="Feed">
+    <ion-content ng-init="loadFeed()">
+        <!-- on-refresh="getNewData()" -->
+        <ion-refresher pulling-text="Pull to refresh...">
+        </ion-refresher>
+        <div class="list card" ng-repeat="item in feedData">
+            <div class="item item-avatar">
+                <img src="img/logo.png">
+                <div class="item-text-wrap">สหกรณ์ออมทรัพย์พนักงานบริษัทการบินไทย จำกัด โดย ทีมประชาสัมพันธ์</div>
+                <p>{{item.date | date:'dd MMMM yyyy'}}</p>
+            </div>
+            <div class="item item-body">
+                <img class="full-image" src="{{item.picture}}">
+                <p>
+                    {{item.text}}
+                </p>
+            </div>
+        </div>
+    </ion-content>
 </ion-view>

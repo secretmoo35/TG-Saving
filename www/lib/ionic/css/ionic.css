@@ -3351,6 +3351,7 @@ body.grade-c {
   position: relative; }
 
 .scroll-content {
+  background-color: #E9E2FF;
   position: absolute;
   top: 0;
   right: 0;
@@ -3925,12 +3926,12 @@ a.subdued {
     .bar.bar-light.bar-footer {
       background-image: linear-gradient(180deg, #ddd, #ddd 50%, transparent 50%); }
   .bar.bar-stable {
-    border-color: #b2b2b2;
-    background-color: #f8f8f8;
-    background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
+    /*border-color: #b2b2b2;*/
+    background-color: #4E2A82;
+    background-image: linear-gradient(0deg, #4E2A82, #4E2A82 50%, transparent 50%);
     color: #444; }
     .bar.bar-stable .title {
-      color: #444; }
+      color: #FFF; }
     .bar.bar-stable.bar-footer {
       background-image: linear-gradient(180deg, #b2b2b2, #b2b2b2 50%, transparent 50%); }
   .bar.bar-positive {
@@ -5263,8 +5264,8 @@ ion-tabs.tabs-color-active-dark .tab-item {
   display: none; }
 
 .menu-animated {
-  -webkit-transition: -webkit-transform 200ms ease;
-  transition: transform 200ms ease; }
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease; }
 
 /**
  * Modals
@@ -5946,7 +5947,7 @@ button.item.item-complex {
   z-index: 2;
   padding: 16px 49px 16px 16px;
   border: none;
-  background-color: #fff; }
+  background-color: #4E2A82; }
 
 a.item-content {
   display: block;

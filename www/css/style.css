@@ -2,4 +2,14 @@
 
 .sub-menu {
     margin-left: 40px;
+    font-size: 15px;
+}
+
+.BG-menu {
+    background-color: #4E2A82;
+}
+
+.Bg-menus {
+    color: #FFF;
+    border-color: #4E2A82;
 }
