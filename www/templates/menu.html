@@ -12,45 +12,53 @@
     </ion-side-menu-content>
     <ion-side-menu side="left">
         <ion-header-bar class="bar-stable">
-            <img src="img/logo-SCB-150.jpg" style="height: 70px; margin-left:35%;">
+            <!-- <img src="img/logo-SCB-150.jpg" style="height: 70px; margin-left:35%;"> -->
         </ion-header-bar>
         <ion-content>
             <ion-list>
-                <ion-item menu-close href="#">
-                    Login
-                </ion-item>
                 <ion-item menu-close href="#/app/dashboard">
-                    Dashboard
+                    ข้อมูลการเงิน
                 </ion-item>
-                <ion-item menu-close href="#">
-                    Browse
+                <div class="sub-menu">
+                    <ion-item menu-close href="#/app/deposit">
+                        เงินฝาก
+                    </ion-item>
+                    <ion-item menu-close href="#/app/capital-stock">
+                        ทุนเรือนหุ้น
+                    </ion-item>
+                    <ion-item menu-close href="#/app/loan">
+                        เงินกู้
+                    </ion-item>
+                    <ion-item menu-close href="#/app/guarantee">
+                        การค้ำประกัน
+                    </ion-item>
+                    <ion-item menu-close href="#/app/interment">
+                        ฌาปนกิจ
+                    </ion-item>
+                </div>
+                <ion-item menu-close href="#/app/evalu">
+                    แบบสอบถาม
                 </ion-item>
-                <ion-item menu-close href="#">
-                    Playlists
+                <ion-item menu-close href="#/app/feed">
+                    ข่าวสารและการแจ้งเตือน
                 </ion-item>
-                <ion-item menu-close href="#">
-                    Playlists
+                <ion-item menu-close href="#/app/calculator">
+                    คำนวณเงินกู้
                 </ion-item>
-                <ion-item menu-close href="#">
-                    Playlists
+                <ion-item menu-close href="#/app/download">
+                    ดาวน์โหลดเอกสาร
                 </ion-item>
-                <ion-item menu-close href="#">
-                    Playlists
+                <ion-item menu-close href="#/app/faq">
+                    คำถามที่พบบ่อย
                 </ion-item>
-                <ion-item menu-close href="#">
-                    Playlists
+                <ion-item menu-close href="#/app/about">
+                    เกี่ยวกับเรา
                 </ion-item>
-                <ion-item menu-close href="#">
-                    Playlists
+                <ion-item menu-close href="#/app/setting">
+                    ตั้งค่า
                 </ion-item>
-                <ion-item menu-close href="#">
-                    Playlists
-                </ion-item>
-                <ion-item menu-close href="#">
-                    Playlists
-                </ion-item>
-                <ion-item menu-close href="#">
-                    Playlists
+                <ion-item menu-close href="#/app/login">
+                    ออกจากระบบ
                 </ion-item>
             </ion-list>
         </ion-content>
