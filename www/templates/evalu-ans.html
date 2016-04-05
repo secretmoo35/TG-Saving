@@ -1,0 +1,10 @@
+<ion-view view-title="คำตอบ">
+    <ion-content>
+        <div ng-repeat="item in answers.answer">
+            <a class="item item-icon-right" ng-click="selectAns(item)">
+            	{{item}}
+                <i class="icon ion-chevron-right" style="font-size:25px;"></i>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>
