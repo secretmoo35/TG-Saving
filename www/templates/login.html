@@ -8,17 +8,17 @@
         <br>
         <div class="list list-inset">
             <label class="item item-input">
-                <input type="text" placeholder="ชื่อผู้ใช้">
+                <input type="text" placeholder="ชื่อผู้ใช้" ng-model="username">
             </label>
         </div>
         <div class="list list-inset">
             <label class="item item-input">
-                <input type="text" placeholder="รหัสผ่าน">
+                <input type="password" placeholder="รหัสผ่าน" ng-model="password">
             </label>
         </div>
         <div class="row">
             <div class="col">
-                <button class="button button-block button-royal " ng-click="login()">
+                <button class="button button-block button-royal " ng-click="login(username,password)">
                     ลงชื่อเข้าใช้
                 </button>
             </div>
