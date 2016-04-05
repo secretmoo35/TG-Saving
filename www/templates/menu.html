@@ -11,41 +11,41 @@
         <ion-nav-view name="menuContent"></ion-nav-view>
     </ion-side-menu-content>
     <ion-side-menu side="left" class="BG-menu">
-        <ion-header-bar class="BG-menu bar-stable" style="height: 100px;">
-            <img src="img/logo1.png" style="height: 70px; margin-left:25%;">
+        <ion-header-bar class="BG-menu bar-stable" style="height: 100px;" ng-hide="loginMenu">
+            <h4 style="margin-left:5%; color:#FFF ">นายสมชาย ใจดี <br> No.1039482034</h4>
         </ion-header-bar>
         <ion-content style="margin-top:50px;">
             <ion-list style="background-color: #4E2A82;">
+            <div ng-hide="loginMenu">
                 <ion-item menu-close href="#/app/dashboard" class="Bg-menus">
                     ข้อมูลการเงิน
                 </ion-item>
-                <div ng-hide="loginMenu">
-                    <ion-item menu-close href="#/app/deposit" class="Bg-menus">
-                        <label class="sub-menu">เงินฝาก</label><i class="icon-CNET-piggy"></i>
-                    </ion-item>
-                    <ion-item menu-close href="#/app/capital-stock" class="Bg-menus">
-                        <label class="sub-menu">ทุนเรือนหุ้น</label>
-                    </ion-item>
-                    <ion-item menu-close href="#/app/loan" class="Bg-menus">
-                        <label class="sub-menu">เงินกู้</label>
-                    </ion-item>
-                    <ion-item menu-close href="#/app/guarantee" class="Bg-menus">
-                        <label class="sub-menu">การค้ำประกัน</label>
-                    </ion-item>
-                    <ion-item menu-close href="#/app/interment" class="Bg-menus">
-                        <label class="sub-menu">ฌาปนกิจ</label>
-                    </ion-item>
-                </div>
+                <ion-item menu-close href="#/app/deposit" class="Bg-menus">
+                    <label class="sub-menu"><i class="icon-CNET-piggy font-20 " style="color: #69FF0E;"></i>&nbsp;&nbsp;เงินฝาก</label>
+                </ion-item>
+                <ion-item menu-close href="#/app/capital-stock" class="Bg-menus">
+                    <label class="sub-menu"><i class="icon-CNET-graph font-20" style="color: cyan;"></i>&nbsp;&nbsp;ทุนเรือนหุ้น</label>
+                </ion-item>
+                <ion-item menu-close href="#/app/loan" class="Bg-menus">
+                    <label class="sub-menu"><i class="icon-CNET-money02 font-20" style="color: red;"></i>&nbsp;&nbsp;เงินกู้</label>
+                </ion-item>
+                <ion-item menu-close href="#/app/guarantee" class="Bg-menus">
+                    <label class="sub-menu"><i class="ion-ios-person-outline font-20" style="color: orange;"></i>&nbsp;&nbsp;การค้ำประกัน</label>
+                </ion-item>
+                <ion-item menu-close href="#/app/interment" class="Bg-menus">
+                    <label class="sub-menu"><i class="icon-CNET-coins font-20" style="margin-left: -3px;"></i>&nbsp;&nbsp;ฌาปนกิจ</label>
+                </ion-item>
                 <ion-item menu-close href="#/app/evalu" class="Bg-menus">
                     แบบสอบถาม
                 </ion-item>
+            </div>
                 <ion-item menu-close href="#/app/feed" class="Bg-menus">
                     ข่าวสารและการแจ้งเตือน
                 </ion-item>
                 <ion-item menu-close href="#/app/calculator" class="Bg-menus">
                     คำนวณเงินกู้
                 </ion-item>
-                <ion-item menu-close href="#/app/download" class="Bg-menus">
+                <ion-item menu-close href="#/app/download" class="Bg-menus" ng-hide="loginMenu">
                     ดาวน์โหลดเอกสาร
                 </ion-item>
                 <ion-item menu-close href="#/app/faq" class="Bg-menus">
@@ -54,10 +54,10 @@
                 <ion-item menu-close href="#/app/about" class="Bg-menus">
                     เกี่ยวกับเรา
                 </ion-item>
-                <ion-item menu-close href="#/app/setting" class="Bg-menus">
+                <ion-item menu-close href="#/app/setting" class="Bg-menus" ng-hide="loginMenu">
                     ตั้งค่า
                 </ion-item>
-                <ion-item menu-close href="#/app/login" class="Bg-menus">
+                <ion-item menu-close href="#/app/login" class="Bg-menus" ng-hide="loginMenu">
                     ออกจากระบบ
                 </ion-item>
             </ion-list>

@@ -22,7 +22,7 @@ myApp.run(function($ionicPlatform) {
     });
 })
 
-myApp.config(function($stateProvider, $urlRouterProvider) {
+myApp.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
     $stateProvider
 
         .state('app', {
@@ -232,4 +232,8 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/login');
+
+
+    $ionicConfigProvider.tabs.position('bottom');
+    $ionicConfigProvider.tabs.style('standard');
 });
