@@ -44,7 +44,8 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/dashboard',
             views: {
                 'menuContent': {
-                    templateUrl: 'templates/dashboard.html'
+                    templateUrl: 'templates/dashboard.html',
+                    controller:'dashboardCtrl'
                 }
             }
         })
