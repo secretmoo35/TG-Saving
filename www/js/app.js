@@ -91,7 +91,8 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/evalu',
             views: {
                 'menuContent': {
-                    templateUrl: 'templates/evalu.html'
+                    templateUrl: 'templates/evalu.html',
+                    controller: 'EvaluCtrl'
                 }
             }
         })
@@ -159,7 +160,26 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
                     templateUrl: 'templates/depositdetail.html',
                 }
             }
+        })
+        .state('app.evalu-do', {
+            url: '/evalu-do:ans',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/evalu-do.html',
+                    controller: 'EvaluCtrl'
+                }
+            }
+        })
+        .state('app.evalu-ans', {
+            url: '/evalu-ans',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/evalu-ans.html',
+                    controller: 'EvaluCtrl'
+                }
+            }
         });
+
 
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/login');
