@@ -6,12 +6,12 @@
 }
 
 .BG-menu {
-    background-color: #4E2A82;
+    background-color: #886AEA;
 }
 
 .Bg-menus {
     color: #FFF;
-    border-color: #4E2A82;
+    border-color: #886AEA;
 }
 
 .mg-top {
@@ -75,8 +75,10 @@ ion-nav-bar.bar-stables * {
 }
 
 .bottom-tap > .tabs, .tabs.tabs-positive {
-    border-color: #4E2A82;
-    background-color: #4E2A82;
-    background-image: linear-gradient(0deg, #4E2A82, #4E2A82 50%, transparent 50%);
+    border-color: #886AEA;
+    background-color: #886AEA;
+    background-image: linear-gradient(0deg, #886AEA, #886AEA 50%, transparent 50%);
     color: #fff;
 }
+
+/*#886AEA*/

@@ -3927,8 +3927,8 @@ a.subdued {
       background-image: linear-gradient(180deg, #ddd, #ddd 50%, transparent 50%); }
   .bar.bar-stable {
     /*border-color: #b2b2b2;*/
-    background-color: #4E2A82;
-    background-image: linear-gradient(0deg, #4E2A82, #4E2A82 50%, transparent 50%);
+    background-color: #886AEA;
+    background-image: linear-gradient(0deg, #886AEA, #886AEA 50%, transparent 50%);
     color: #444; }
     .bar.bar-stable .title {
       color: #FFF; }
@@ -5947,7 +5947,7 @@ button.item.item-complex {
   z-index: 2;
   padding: 16px 49px 16px 16px;
   border: none;
-  background-color: #4E2A82; }
+  background-color: #886AEA; }
 
 a.item-content {
   display: block;
