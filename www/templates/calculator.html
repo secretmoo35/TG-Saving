@@ -1,5 +1,46 @@
-<ion-view view-title="Title">
-  <ion-content>
-    Content Here
-  </ion-content>
+<ion-view view-title="คำนวนเงินกู้">
+    <ion-content>
+        <label class="item item-input item-view">
+            <div class="input-label">
+                ประเภทการส่ง
+            </div>
+            <view>
+                <label class="item item-list">
+                    <label-list>
+                        <ion-radio ng-model="choice" ng-value="'A'">ส่งเท่ากันทุกเดือน(ต้น+ดอก)</ion-radio>
+                        <ion-radio ng-model="choice" ng-value="'B'">ส่งเท่ากันทุกเดือน</ion-radio>
+                        </ion-list>
+                </label>
+            </view>
+        </label>
+        <br>
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">อัตราดอกเบี้ย</span>
+                <input type="text"> &nbsp;ต่อปี
+            </label>
+        </div>
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">วงเงินกู้</span>
+                <input type="text"> &nbsp;บาท
+            </label>
+        </div>
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">จำนวนงวด</span>
+                <input type="text"> &nbsp;งวด
+            </label>
+        </div>
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">ส่งเงินกู้ต่อเดือนโดยประมาณ</span>
+                <input type="text"> &nbsp;บาท
+            </label>
+        </div>
+
+
+         
+        </div>
+    </ion-content>
 </ion-view>
