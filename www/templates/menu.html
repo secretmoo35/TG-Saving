@@ -1,4 +1,4 @@
-<ion-side-menus enable-menu-with-back-views="false">
+<ion-side-menus enable-menu-with-back-views="false" ng-init="menuLogin()">
     <ion-side-menu-content>
         <ion-nav-bar class="bar-stable">
             <ion-nav-back-button>
@@ -19,7 +19,7 @@
                 <ion-item menu-close href="#/app/dashboard" class="Bg-menus">
                     ข้อมูลการเงิน
                 </ion-item>
-                <div>
+                <div ng-hide="loginMenu">
                     <ion-item menu-close href="#/app/deposit" class="Bg-menus">
                         <label class="sub-menu">เงินฝาก</label>
                     </ion-item>

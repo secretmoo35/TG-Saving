@@ -31,20 +31,19 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'templates/menu.html',
             controller: 'AppCtrl'
         })
-        .state('app.login', {
+        .state('login', {
             url: '/login',
-            views: {
-                'menuContent': {
-                    templateUrl: 'templates/login.html',
-                    controller: 'AppCtrl'
-                }
-            }
+
+            templateUrl: 'templates/login.html',
+            controller: 'AppCtrl'
+
         })
         .state('app.dashboard', {
             url: '/dashboard',
             views: {
                 'menuContent': {
-                    templateUrl: 'templates/dashboard.html'
+                    templateUrl: 'templates/dashboard.html',
+                    controller: 'dashboardCtrl'
                 }
             }
         })
@@ -109,7 +108,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
             views: {
                 'menuContent': {
                     templateUrl: 'templates/feed.html',
-                    controller:'FeedCtrl'
+                    controller: 'FeedCtrl'
                 }
             }
         })
@@ -147,13 +146,21 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
         })
         .state('register', {
             url: '/register',
-        
-                    templateUrl: 'templates/register.html',
-                    controller:'AppCtrl'
-                
-            
+
+            templateUrl: 'templates/register.html',
+            controller: 'AppCtrl'
+
+
+        })
+        .state('app.depositdetail', {
+            url: '/depositdetail',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/depositdetail.html',
+                }
+            }
         });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/login');
+    $urlRouterProvider.otherwise('/login');
 });

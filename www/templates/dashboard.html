@@ -1,5 +1,212 @@
-<ion-view view-title="Title">
-  <ion-content>
-    Dashboard
-  </ion-content>
+<ion-view view-title="ข้อมูลการเงิน">
+    <ion-content>
+        <div class="row text-center" style="margin-top: 15px;">
+            <div class="col col-25" style="margin-top: auto;">
+                <button class="{{interment? 'true' : 'button-outline'}} button button-dark miniPack" ng-click="interments()">
+                    <label class="font-15">ฌาปนกิจ</label>
+                    <p class="bigPackMember-label margin-top-15">12k</p>
+                </button>
+            </div>
+            <div class="col col-50">
+                <button class="{{deposit? 'true' : 'button-outline'}} button button-balanced bigPack" ng-click="deposits()">
+                    <label class="font-20">เงินฝาก</label>
+                    <p class="bigPackMember-label">230k</p>
+                </button>
+            </div>
+            <div class="col col-25" style="margin-top: auto;margin-left: -10px;">
+                <button class="{{loan? 'true' : 'button-outline'}} button button-calm miniPack" ng-click="loans()">
+                    <label class="font-15">เงินกู้</label>
+                    <p class="bigPackMember-label margin-top-15">30k</p>
+                </button>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col col-20 text-center">
+            </div>
+            <div class="col col-30 text-center">
+                <button class="{{share? 'true' : 'button-outline'}} button button-energized miniPack" ng-click="shares
+()">
+                    <label class="font-15">หุ้น</label>
+                    <p class="bigPackMember-label margin-top-15">30k</p>
+                </button>
+            </div>
+            <div class="col col-30 text-center">
+                <button class="{{guaratee? 'true' : 'button-outline'}} button button-assertive miniPack" ng-click="guaratees
+()">
+                    <label class="font-15">ค้ำประกัน</label>
+                    <p class="bigPackMember-label margin-top-15">20k</p>
+                </button>
+            </div>
+            <div class="col col-20 text-center">
+            </div>
+        </div>
+        <br>
+        <div ng-show="deposit">
+            <div class="item item-divider">รายการล่าสุด</div>
+            <div class="list">
+                <a class="item" href="#">ออมทรัพย์&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+            	<label style="color:#555555;">4 April 2016&nbsp;&nbsp;16:50</label>
+                <span class="item-note color-green">
+                	<!-- <i class="ion-android-remove"></i> -->
+                	<i class="ion-plus-round"></i>
+     					 4,000
+    			</span>
+            </a>
+                <a class="item" href="#">ออมทรัพย์&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+            	<label style="color:#555555;">4 April 2016&nbsp;&nbsp;12:30</label>
+                <span class="item-note color-green">
+                	<!-- <i class="ion-android-remove"></i> -->
+                	<i class="ion-plus-round"></i>
+     					 1,000
+    			</span>
+            </a>
+                <a class="item" href="#">ออมทรัพย์&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+            	<label style="color:#555555;">3 April 2016&nbsp;&nbsp;12:20</label>
+                <span class="item-note color-red">
+                	<i class="ion-android-remove"></i>
+                	<!-- <i class="ion-plus-round"></i> -->
+     					 8,000
+    			</span>
+            </a>
+                <a class="item" href="#">ออมทรัพย์&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+            	<label style="color:#555555;">1 April 2016&nbsp;&nbsp;13:10</label>
+                <span class="item-note color-red">
+                	<i class="ion-android-remove"></i>
+                	<!-- <i class="ion-plus-round"></i> -->
+     					 1,500
+    			</span>
+            </a>
+                <a class="item" href="#">ออมทรัพย์&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+            	<label style="color:#555555;">20 Mar 2016&nbsp;&nbsp;11:40</label>
+                <span class="item-note color-green">
+                	<!-- <i class="ion-android-remove"></i> -->
+                	<i class="ion-plus-round"></i>
+     					 900
+    			</span>
+            </a>
+            </div>
+        </div>
+        <div ng-show="interment">
+            <div class="item item-divider">รายการล่าสุด</div>
+            <div class="list">
+                <a class="item" href="#">ออมทรัพย์&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+            	<label style="color:#555555;">4 April 2016&nbsp;&nbsp;10:00</label>
+                <span class="item-note color-green">
+                	<!-- <i class="ion-android-remove"></i> -->
+                	<i class="ion-plus-round"></i>
+     					 520
+    			</span>
+            </a>
+                <a class="item" href="#">ออมทรัพย์&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+            	<label style="color:#555555;">4 April 2016&nbsp;&nbsp;12:20</label>
+                <span class="item-note color-green">
+                	<!-- <i class="ion-android-remove"></i> -->
+                	<i class="ion-plus-round"></i>
+     					 520
+    			</span>
+            </a>
+                <a class="item" href="#">ออมทรัพย์&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+            	<label style="color:#555555;">3 April 2016&nbsp;&nbsp;11:50</label>
+                <span class="item-note color-green">
+                	<!-- <i class="ion-android-remove"></i> -->
+                	<i class="ion-plus-round"></i>
+     					 520
+    			</span>
+            </a>
+                <a class="item" href="#">ออมทรัพย์&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+            	<label style="color:#555555;">1 April 2016&nbsp;&nbsp;16:20</label>
+                <span class="item-note color-green">
+                	<!-- <i class="ion-android-remove"></i> -->
+                	<i class="ion-plus-round"></i>
+     					 520
+    			</span>
+            </a>
+                <a class="item" href="#">ออมทรัพย์&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+            	<label style="color:#555555;">20 Mar 2016&nbsp;&nbsp;09:20</label>
+                <span class="item-note color-green">
+                	<!-- <i class="ion-android-remove"></i> -->
+                	<i class="ion-plus-round"></i>
+     					 520
+    			</span>
+            </a>
+            </div>
+        </div>
+        <div ng-show="loan">
+            <div class="item item-divider">รายการล่าสุด</div>
+            <div class="list">
+                <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">งวดที่ 2</label><br> 
+            	<label style="color:#555555;">1 April 2016&nbsp;&nbsp;12:20</label>
+                <span class="item-note color-red">
+                	<i class="ion-android-remove"></i>              	
+     					 3,000
+    			</span>
+            </a>
+                <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">งวดที่ 2</label><br> 
+            	<label style="color:#555555;">15 Mar 2016&nbsp;&nbsp;13:10</label>
+                <span class="item-note color-red">
+                	<i class="ion-android-remove"></i>                	
+     					 3,000
+    			</span>
+            </a>
+                <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">งวดที่ 1</label><br> 
+            	<label style="color:#555555;">1 Mar 2016&nbsp;&nbsp;11:40</label>
+                <span class="item-note color-red">
+                	<i class="ion-android-remove"></i>                	
+     					 3,000
+    			</span>
+            </a>
+            </div>
+        </div>
+        <div ng-show="share">
+            <div class="item item-divider">รายการล่าสุด</div>
+            <div class="list">
+                <a class="item" href="#">กองทุน&nbsp;&nbsp;<br> 
+            	<label style="color:#555555;">1 April 2016&nbsp;&nbsp;09:05</label>
+                <span class="item-note color-green">
+                	<i class="ion-plus-round"></i>          	
+     					 2,000
+    			</span>
+            </a>
+                <a class="item" href="#">กองทุน&nbsp;&nbsp;<br> 
+            	<label style="color:#555555;">30 Mar 2016&nbsp;&nbsp;09:04</label>
+                <span class="item-note color-green">
+                	<i class="ion-plus-round"></i>	
+     					 2,000
+    			</span>
+            </a>
+                <a class="item" href="#">กองทุน&nbsp;&nbsp;<br> 
+            	<label style="color:#555555;">20 Mar 2016&nbsp;&nbsp;09:00</label>
+                <span class="item-note color-green">
+                	<i class="ion-plus-round"></i>              	
+     					 2,000
+    			</span>
+            </a>
+                <a class="item" href="#">กองทุน&nbsp;&nbsp;<br> 
+            	<label style="color:#555555;">10 Mar 2016&nbsp;&nbsp;09:12</label>
+                <span class="item-note color-green">
+                	<i class="ion-plus-round"></i>              	
+     					 2,000
+    			</span>
+            </a>
+                <a class="item" href="#">กองทุน&nbsp;&nbsp;<br> 
+            	<label style="color:#555555;">1 Mar 2016&nbsp;&nbsp;09:10</label>
+                <span class="item-note color-green">
+                	<i class="ion-plus-round"></i>              	
+     					 2,000
+    			</span>
+            </a>
+            </div>
+        </div>
+        <div ng-show="guaratee">
+            <div class="item item-divider">การค้ำประกัน</div>
+            <div class="list">
+                <a class="item" href="#">ประเภท :&nbsp;เงินกู้ฉุกเฉิน<br> 
+            	<label style="color:#aaa;">ชื่อผู้กู้ &nbsp;นายสะอาด งามแท้</label>
+                <span class="item-note">       	
+     					 เลขที่ 436XXXXXX
+    			</span>
+            </a>
+            </div>
+        </div>
+    </ion-content>
 </ion-view>
