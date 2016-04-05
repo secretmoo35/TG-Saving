@@ -178,6 +178,23 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
                     controller: 'EvaluCtrl'
                 }
             }
+        })
+        .state('app.pdf', {
+            url: '/pdf',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/pdf.html',
+                }
+            }
+        })
+        .state('app.map', {
+            url: '/map',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/map.html',
+                    controller:'mapCtrl'
+                }
+            }
         });
 
 
