@@ -152,10 +152,13 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 
 
         })
-        .state('depositdetail', {
+        .state('app.depositdetail', {
             url: '/depositdetail',
-            templateUrl: 'templates/depositdetail.html',
-
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/depositdetail.html',
+                }
+            }
         });
 
     // if none of the above states are matched, use this as the fallback
