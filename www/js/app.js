@@ -192,7 +192,39 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
             views: {
                 'menuContent': {
                     templateUrl: 'templates/map.html',
-                    controller:'mapCtrl'
+                    controller: 'mapCtrl'
+                }
+            }
+        })
+        .state('app.capital-stockdetail', {
+            url: '/capital-stockdetail',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/capital-stockdetail.html',
+                }
+            }
+        })
+        .state('app.loandetail', {
+            url: '/loandetail',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/loandetail.html',
+                }
+            }
+        })
+        .state('app.guaranteedetail', {
+            url: '/guaranteedetail',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/guaranteedetail.html',
+                }
+            }
+        })
+        .state('app.intermentdetail', {
+            url: '/intermentdetail',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/intermentdetail.html',
                 }
             }
         });
