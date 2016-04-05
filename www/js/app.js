@@ -91,7 +91,8 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/evalu',
             views: {
                 'menuContent': {
-                    templateUrl: 'templates/evalu.html'
+                    templateUrl: 'templates/evalu.html',
+                    controller: 'EvaluCtrl'
                 }
             }
         })
@@ -159,7 +160,75 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
                     templateUrl: 'templates/depositdetail.html',
                 }
             }
+        })
+        .state('app.evalu-do', {
+            url: '/evalu-do:ans',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/evalu-do.html',
+                    controller: 'EvaluCtrl'
+                }
+            }
+        })
+        .state('app.evalu-ans', {
+            url: '/evalu-ans',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/evalu-ans.html',
+                    controller: 'EvaluCtrl'
+                }
+            }
+        })
+        .state('app.pdf', {
+            url: '/pdf',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/pdf.html',
+                }
+            }
+        })
+        .state('app.map', {
+            url: '/map',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/map.html',
+                    controller: 'mapCtrl'
+                }
+            }
+        })
+        .state('app.capital-stockdetail', {
+            url: '/capital-stockdetail',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/capital-stockdetail.html',
+                }
+            }
+        })
+        .state('app.loandetail', {
+            url: '/loandetail',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/loandetail.html',
+                }
+            }
+        })
+        .state('app.guaranteedetail', {
+            url: '/guaranteedetail',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/guaranteedetail.html',
+                }
+            }
+        })
+        .state('app.intermentdetail', {
+            url: '/intermentdetail',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/intermentdetail.html',
+                }
+            }
         });
+
 
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/login');
