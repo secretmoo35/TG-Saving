@@ -82,3 +82,11 @@ ion-nav-bar.bar-stables * {
 }
 
 /*#886AEA*/
+
+.item-radio .item-content {
+    position: relative;
+    z-index: 2;
+    padding: 16px 49px 16px 16px;
+    border: none;
+    background-color: #FFF;
+}

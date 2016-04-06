@@ -6,16 +6,16 @@
             <button class="button button-icon button-clear ion-navicon" menu-toggle="left" style="color:White;">
             </button>
         </ion-nav-buttons>
-        <ion-nav-buttons side="right" >
-            <button class="button button-icon  ion-checkmark-circled"style="color:White;" ng-show="answer.ans">
+        <ion-nav-buttons side="right">
+            <button class="button button-icon  ion-checkmark-circled" style="color:White;" ng-show="answerS.ans">
             </button>
         </ion-nav-buttons>
     </ion-nav-bar>
     <ion-content>
         <div class="list">
-            <a class="item item-icon-right" href="#/app/evalu-ans">
-                <h2>1. คุณอายุเท่าไหร่</h2>
-                <p ng-hide="!ans" style="margin-left:16px;">{{answer.ans}}</p>
+            <a class="item item-icon-right" ng-repeat="item in answers" ng-click="sendAnswer(item)">
+                <h2>{{item.question}}</h2>
+                <p ng-hide="!answerS.ans" style="margin-left:16px;">ตอบ {{answerS.ans}}</p>
                 <i class="icon ion-chevron-right" style="font-size:25px;"></i>
             </a>
         </div>
