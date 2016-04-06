@@ -6,9 +6,21 @@
                 <p>ประเภท : เงินกู้ฉุกฉิน</p>
                 <p>ชื่อผู้กู้ : นายสะอาด งามแท้</p>
             </div>
-            <div class="item item-divider">รายการล่าสุด</div>
-            <div class="list">
-                <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+            <div class="row">
+                <div class="col col-10"></div>
+                <div class="col col-80">
+                    <div class=" button-bar ">
+                        <a class="{{onemonth? 'true' : 'button-outline'}} button  button-balanced" ng-click="onemonthz()">ปัจจุบัน</a>
+                        <a class="{{threemonths? 'true' : 'button-outline'}} button  button-balanced" ng-click="threemonthsz()">3 เดือน</a>
+                        <a class="{{sixmonths? 'true' : 'button-outline'}} button  button-balanced" ng-click="sixmonthsz()">6 เดือน</a>
+                    </div>
+                </div>
+                <div class="col col-10"></div>
+            </div>
+            <div ng-show="onemonth">
+                <div class="item item-divider">รายการล่าสุดของเดือนปัจจุบัน</div>
+                <div class="list">
+                    <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
                 <label style="color:#555555;">1 Apr 2016 &nbsp;&nbsp;16:50</label>
                 <span class="item-note color-green">
                     <!-- <i class="ion-android-remove"></i> -->
@@ -16,8 +28,21 @@
                          10,000.00
                 </span>
             </a>
-                <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
-                <label style="color:#555555;">15 Mar 2016&nbsp;&nbsp;12:30</label>
+                </div>
+            </div>
+            <div ng-show="threemonths">
+                <div class="item item-divider">ย้อนหลัง 3 เดือน</div>
+                <div class="list">
+                    <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+                <label style="color:#555555;">1 Apr 2016 &nbsp;&nbsp;16:50</label>
+                <span class="item-note color-green">
+                    <!-- <i class="ion-android-remove"></i> -->
+                    <i class="ion-plus-round"></i>
+                         10,000.00
+                </span>
+            </a>
+                    <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+                <label style="color:#555555;">15 Mar 2016&nbsp;&nbsp;07:22</label>
                 <span class="item-note color-green">
                     <!-- <i class="ion-android-remove"></i> -->
                     <i class="ion-plus-round"></i>
@@ -25,31 +50,61 @@
                 </span>
             
             </a>
-                <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
-                <label style="color:#555555;">1 Feb 2016&nbsp;&nbsp;11:40</label>
+                    <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+                <label style="color:#555555;">1 Feb 2016&nbsp;&nbsp;20:04</label>
                 <span class="item-note color-green">
                     <!-- <i class="ion-android-remove"></i> -->
                     <i class="ion-plus-round"></i>
                           10,000.00
                 </span>
             </a>
-                <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
-                <label style="color:#555555;">20 Jan 2016&nbsp;&nbsp;11:40</label>
+                </div>
+            </div>
+            <div ng-show="sixmonths">
+                <div class="item item-divider">ย้อนหลัง 6 เดือน</div>
+                <div class="list">
+                    <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+                <label style="color:#555555;">1 Apr 2016 &nbsp;&nbsp;16:50</label>
+                <span class="item-note color-green">
+                    <!-- <i class="ion-android-remove"></i> -->
+                    <i class="ion-plus-round"></i>
+                         10,000.00
+                </span>
+            </a>
+                    <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+                <label style="color:#555555;">15 Mar 2016&nbsp;&nbsp;07:22</label>
+                <span class="item-note color-green">
+                    <!-- <i class="ion-android-remove"></i> -->
+                    <i class="ion-plus-round"></i>
+                         10,000.00
+                </span>
+            
+            </a>
+                    <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+                <label style="color:#555555;">1 Feb 2016&nbsp;&nbsp;20:04</label>
                 <span class="item-note color-green">
                     <!-- <i class="ion-android-remove"></i> -->
                     <i class="ion-plus-round"></i>
                           10,000.00
                 </span>
             </a>
-            <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
-                <label style="color:#555555;">2 Dec 2015&nbsp;&nbsp;11:40</label>
+                    <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+                <label style="color:#555555;">08 Jan 2016&nbsp;&nbsp;16:55</label>
                 <span class="item-note color-green">
                     <!-- <i class="ion-android-remove"></i> -->
                     <i class="ion-plus-round"></i>
                           10,000.00
                 </span>
             </a>
-           <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+                    <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
+                <label style="color:#555555;">2 Dec 2015&nbsp;&nbsp;10:12</label>
+                <span class="item-note color-green">
+                    <!-- <i class="ion-android-remove"></i> -->
+                    <i class="ion-plus-round"></i>
+                          10,000.00
+                </span>
+            </a>
+                    <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
                 <label style="color:#555555;">10 Nov 2015&nbsp;&nbsp;11:40</label>
                 <span class="item-note color-green">
                     <!-- <i class="ion-android-remove"></i> -->
@@ -57,15 +112,8 @@
                           10,000.00
                 </span>
             </a>
-            <a class="item" href="#">ชำระเงินกู้&nbsp;&nbsp;<label style="color:#555555;">153-4-26170-0</label><br> 
-                <label style="color:#555555;">10 Oct 2015&nbsp;&nbsp;11:40</label>
-                <span class="item-note color-green">
-                    <!-- <i class="ion-android-remove"></i> -->
-                    <i class="ion-plus-round"></i>
-                          10,000.00
-                </span>
-            </a>
-
+                </div>
             </div>
+        </div>
     </ion-content>
 </ion-view>
