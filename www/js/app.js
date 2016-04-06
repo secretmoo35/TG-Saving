@@ -22,7 +22,7 @@ myApp.run(function($ionicPlatform) {
     });
 })
 
-myApp.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
+myApp.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
     $stateProvider
 
         .state('app', {
@@ -230,6 +230,38 @@ myApp.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
                 'menuContent': {
                     templateUrl: 'templates/intermentdetail.html',
                     controller: 'moneyCtrl'
+                }
+            }
+        })
+        .state('app.changepassword', {
+            url: '/changepassword',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/changepassword.html'
+                }
+            }
+        })
+        .state('app.changename', {
+            url: '/changename',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/changename.html'
+                }
+            }
+        })
+        .state('app.changechild', {
+            url: '/changechild',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/changechild.html'
+                }
+            }
+        })
+                .state('app.subchangechild', {
+            url: '/subchangechild',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/subchangechild.html'
                 }
             }
         });
