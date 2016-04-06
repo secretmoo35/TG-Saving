@@ -1,8 +1,8 @@
 <ion-view view-title="{{getAnswerByID[0].question}}" ng-init="getAnswer()">
     <ion-content >
-<!--         <div class="item item-divider item-text-wrap">
+        <div class="item item-divider item-text-wrap">
             {{getAnswerByID[0].question}}
-        </div> -->
+        </div>
         <ion-list ng-repeat="item in getAnswerByID[0].answer" ng-click="selectAns(item)">
             <ion-radio ng-model="choice" ng-value="item">{{item}}</ion-radio>
         </ion-list>
