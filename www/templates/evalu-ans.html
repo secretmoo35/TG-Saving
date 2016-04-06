@@ -1,10 +1,10 @@
-<ion-view view-title="คำตอบ">
-    <ion-content>
-        <div ng-repeat="item in answers.answer">
-            <a class="item item-icon-right" ng-click="selectAns(item)">
-            	{{item}}
-                <i class="icon ion-chevron-right" style="font-size:25px;"></i>
-            </a>
-        </div>
+<ion-view view-title="{{getAnswerByID[0].question}}" ng-init="getAnswer()">
+    <ion-content >
+<!--         <div class="item item-divider item-text-wrap">
+            {{getAnswerByID[0].question}}
+        </div> -->
+        <ion-list ng-repeat="item in getAnswerByID[0].answer" ng-click="selectAns(item)">
+            <ion-radio ng-model="choice" ng-value="item">{{item}}</ion-radio>
+        </ion-list>
     </ion-content>
 </ion-view>

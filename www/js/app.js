@@ -171,7 +171,7 @@ myApp.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
             }
         })
         .state('app.evalu-ans', {
-            url: '/evalu-ans',
+            url: '/evalu-ans:answer',
             views: {
                 'menuContent': {
                     templateUrl: 'templates/evalu-ans.html',
