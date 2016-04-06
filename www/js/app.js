@@ -158,6 +158,7 @@ myApp.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
             views: {
                 'menuContent': {
                     templateUrl: 'templates/depositdetail.html',
+                    controller: 'moneyCtrl'
                 }
             }
         })
@@ -201,6 +202,7 @@ myApp.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
             views: {
                 'menuContent': {
                     templateUrl: 'templates/capital-stockdetail.html',
+                    controller: 'moneyCtrl'
                 }
             }
         })
@@ -209,6 +211,7 @@ myApp.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
             views: {
                 'menuContent': {
                     templateUrl: 'templates/loandetail.html',
+                    controller: 'moneyCtrl'
                 }
             }
         })
@@ -217,6 +220,7 @@ myApp.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
             views: {
                 'menuContent': {
                     templateUrl: 'templates/guaranteedetail.html',
+                    controller: 'moneyCtrl'
                 }
             }
         })
@@ -225,6 +229,7 @@ myApp.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
             views: {
                 'menuContent': {
                     templateUrl: 'templates/intermentdetail.html',
+                    controller: 'moneyCtrl'
                 }
             }
         });
