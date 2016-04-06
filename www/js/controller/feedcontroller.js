@@ -10,4 +10,12 @@ myApp.controller('FeedCtrl', function($scope, $ionicModal, $timeout, $location, 
             });
     }
 
+    $scope.getNewData = function() {
+        $http.get('database.json')
+            .then(function(response) {
+                $scope.feedData = response.data.posts;
+                console.log($scope.feedData);
+            });
+    }
+
 })

@@ -51,7 +51,8 @@ myApp.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) 
             url: '/about',
             views: {
                 'menuContent': {
-                    templateUrl: 'templates/about.html'
+                    templateUrl: 'templates/about.html',
+                    controller:'AboutCtrl'
                 }
             }
         })

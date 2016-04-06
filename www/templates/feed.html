@@ -1,7 +1,7 @@
 <ion-view view-title="Feed">
     <ion-content ng-init="loadFeed()">
         <!-- on-refresh="getNewData()" -->
-        <ion-refresher pulling-text="Pull to refresh...">
+        <ion-refresher pulling-text="Pull to refresh..." on-refresh="getNewData()">
         </ion-refresher>
         <div class="list card" ng-repeat="item in feedData">
             <div class="item item-avatar">
