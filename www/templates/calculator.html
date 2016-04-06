@@ -4,6 +4,10 @@
             <div class="item item-divider item-text-wrap">
                 ประเภทการส่ง
             </div>
+
+  <ion-radio ng-model="choice" ng-value="'A'">ส่งเท่ากันทุกเดือน (ต้น+ดอก)</ion-radio>
+  <ion-radio ng-model="choice" ng-value="'B'">ต้นเท่ากันทุกเดือน</ion-radio>
+
             <ion-checkbox ng-model="interest" ng-checked="!principle" >ส่งเท่ากันทุกเดือน (ต้น+ดอก)</ion-checkbox>
             <ion-checkbox ng-model="principle" ng-checked="!interest">ต้นเท่ากันทุกเดือน</ion-checkbox>
             <div class="item item-divider item-text-wrap">
@@ -14,15 +18,15 @@
             </label>
             <label class="item item-input">
                 <span class="input-label">วงเงินกู้ (บาท)</span>
-                <input class="text-right" type="password">
+                <input class="text-right" type="text">
             </label>
             <label class="item item-input">
                 <span class="input-label">จำนวนงวด (งวด)</span>
-                <input class="text-right" type="password">
+                <input class="text-right" type="text">
             </label>
             <label class="item item-input">
                 <span class="input-label">ส่งเงินกู้ต่อเดือน (บาท)</span>
-                <input class="text-right" type="password">
+                <input class="text-right" type="text">
             </label>
         </div>
         <div class="row">
